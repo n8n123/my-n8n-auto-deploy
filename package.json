@@ -1,0 +1,12 @@
+{
+  "name": "my-n8n-auto-deploy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "n8n"
+  },
+  "dependencies": {
+    "n8n": "^1.100.1"
+  }
+}
