@@ -3,22 +3,7 @@ services:
     name: my-n8n-auto-deploy
     env: node
     plan: free
-    buildCommand: ""
-    startCommand: "n8n start"
+    buildCommand: npm install
+    startCommand: npm run start
     envVars:
-      - key: N8N_BASIC_AUTH_ACTIVE
-        value: true
-      - key: N8N_BASIC_AUTH_USER
-        value: admin
-      - key: N8N_BASIC_AUTH_PASSWORD
-        value: admin123
-      - key: WEBHOOK_URL
-        value: https://my-n8n-auto-deploy.onrender.com
-      - key: N8N_HOST
-        value: 0.0.0.0
-      - key: N8N_PORT
-        value: 10000
-      - key: VUE_APP_URL_BASE_API
-        value: https://my-n8n-auto-deploy.onrender.com
-      - key: NODE_ENV
-        value: production
+      - fromDotEnv: true
