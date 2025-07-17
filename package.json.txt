@@ -1,0 +1,11 @@
+{
+  "name": "n8n-deploy",
+  "version": "1.0.0",
+  "description": "Deploy n8n on Render",
+  "scripts": {
+    "start": "n8n start"
+  },
+  "dependencies": {
+    "n8n": "1.100.1"
+  }
+}
